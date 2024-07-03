@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set Marital Status</title>
+</head>
+<body>
+<h1>Set Marital Status</h1>
+<form method="post" action="city">
+    <input type="hidden" name="action" value="setMaritalStatus">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="married">Marital Status:</label>
+        <select id="married" name="married">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widowed">Widowed</option>
+        </select>
+    </div>
+    <button type="submit">Set</button>
+</form>
+<br>
+<a href="index.jsp">Back to Home</a>
+</body>
+</html>
